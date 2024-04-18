@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>To Do List</h1>
+      </header>
+      <div id="makeTodo">
+        <div class="box-input">
+          <label for="taskName">Task name</label>
+          <input id="taskName" placeholder="My task" />
+        </div>
+        <div class="box-input">
+          <label for="taskPriority">Priority</label>
+          <select id="taskPriority">
+            <option value="0">Low</option>
+            <option value="1" selected>Normal</option>
+            <option value="2">High</option>
+            <option value="3">Very high</option>
+          </select>
+        </div>
+        <div class="box-btn">
+          <button id="taskSave">Save</button>
+        </div>
+      </div>
+      <div id="todo"></div>
+<script src="app.js"></script>    
+</body>
+</html>
